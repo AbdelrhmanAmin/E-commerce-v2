@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#product-container{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#product {
+    margin: 10px;
+    border: 1px solid #666;
+    border-bottom: 0;
+}
+#wish-btn {
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#wish-btn #wish{
+    margin-right: 210px;
+    color: white;
+    transition: 0.4s all ease-in-out;
+    opacity: 0.5;
+}
+#wish-btn #wish:hover{
+    opacity: 1;
+}
+#img-container img{
+    /* max-width: 300px; */
+    width: 100%;
+}
+#context {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 9px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
+    margin-top: -5px;
+}
+#text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#add{
+    transition: 0.4s all ease-in-out;
+    opacity: 0.5;
+    align-self: center;
+}
+#add:hover{
+    opacity: 1;
+}
+#context #title {
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #666;
+}
+#context #price {
+    text-transform: capitalize;
+    font-weight: 700;
+}
