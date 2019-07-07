@@ -3,9 +3,9 @@ import './style.css';
 class Product extends Component {
     // state = {  }
     render() {
-        let products = this.props.Data.map((product) =>{
-            return (
-                <li id='product'>
+        let product = this.props.Data;
+        return (
+               <li id='product'>
                     <div id='wish-btn'>
                     <a id='wish' title="add to wish-list"><i class="fa fa-heart fa-2x"></i></a>
                     </div>
@@ -20,12 +20,6 @@ class Product extends Component {
                         <div id="add" title="add to cart"><i class="fa fa-plus fa-2x"></i></div>
                     </div>
                 </li>
-            )
-        })
-        return (
-            <ul id='product-container'>
-               {products} 
-            </ul>
         );
     }
 }
