@@ -9,7 +9,7 @@ class Header extends Component {
                 </div>
                 <div class="wrap">
                     <div class="search">
-                        <input type="text" class="searchTerm" placeholder="What are you looking for? " onKeyDown={e => this.props.onTextChange(e.target.value)}/>
+                        <input type="text" class="searchTerm" placeholder="What are you looking for? " onKeyUp={e => this.props.onTextChange(e.target.value)}/>
                     </div>
                 </div>
                 <div id="cart">
