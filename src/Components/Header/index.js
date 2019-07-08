@@ -3,20 +3,21 @@ import './style.css';
 class Header extends Component {
     render() {
         return (
-            <div id='header-container'>
-                <div id="logo">
+            <ul id='header-container'>
+                
+                <li id="logo">
                     <a href='/'><i className="fa fa-joomla fa-4x"></i></a>
-                </div>
-                <div class="wrap">
+                </li>
+                <li class="wrap">
                     <div class="search">
                         <input type="text" class="searchTerm" placeholder="What are you looking for? " onKeyUp={e => this.props.onTextChange(e.target.value)}/>
                     </div>
-                </div>
-                <div id="cart">
-                    <i title="cart" className="fa fa-cart-plus"></i>
+                </li>
+                <li id="cart">
+                    <a href="/Cart"><i title="cart" className="fa fa-cart-plus"></i></a>
                     <i title="wish-list" class="fa fa-heart"></i>
-                </div>
-            </div>
+                </li>
+            </ul>
         );
     }
 }

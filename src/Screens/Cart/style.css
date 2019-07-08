@@ -1,0 +1,15 @@
+#inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+#inner div {
+    margin: 15px;
+}
+#inner img {
+    max-width: 300px;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
